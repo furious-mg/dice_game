@@ -9,24 +9,26 @@
 </head>
 
 <body>
-    <main>
         <section class="modal-window">
-            <ul class="modal-items">
-                <li>Each player will roll the dice, beginning with the first player. The number on the dice will be
-                    added to the current score of the player.</li>
-                <li>The player can roll the dice as many times as he wants, there are only two conditions for
-                    termination</li>
-                <li>Condition 1: If the player gets the number 1 on the dice, the turn for rolling the dice will be
-                    passed to the other player. In this case, the current score will not be added to the main score and
-                    the current score will be set to zero</li>
-                <li>Condition 2: If the player playing the turn chooses to hold the score, then the current score of the
-                    player will be added to the main score of the player and the current score will be reset to 0</li>
-                <li>The player whose main score reaches 100 first will be declared as the winner</li>
-                <li>ALL THE BEST!</li>
-            </ul>
-            <button class="play">PLAY!</button>
+            <div class="modal-inside">
+                <span>INSTRUCTIONS</span>
+                <ul class="modal-items">
+                    <li>Each player will roll the dice, beginning with the first player. The number on the dice will be
+                        added to the current score of the player.</li>
+                    <li>The player can roll the dice as many times as he wants, there are only two conditions for
+                        termination</li>
+                    <li>Condition 1: If the player gets the number 1 on the dice, the turn for rolling the dice will be
+                        passed to the other player. In this case, the current score will not be added to the main score and
+                        the current score will be set to zero</li>
+                    <li>Condition 2: If the player playing the turn chooses to hold the score, then the current score of the
+                        player will be added to the main score of the player and the current score will be reset to 0</li>
+                    <li>The player whose main score reaches 100 first will be declared as the winner</li>
+                    <li>ALL THE BEST!</li>
+                </ul>
+                <button class="play btn">👾 PLAY!</button>
+            </div>
         </section>
-
+    <main>
         <section class="player player-0 active">
             <div class="main-score">
                 <h2 class="name" id="name-0">PLAYER 1</h2>

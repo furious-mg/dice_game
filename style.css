@@ -82,12 +82,20 @@ main{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    background-color: white;
+    background-color: rgb(248, 236, 246);
     padding-left: 10px;
     padding-right: 10px;
     cursor:pointer;
+    font-weight: bolder;
 }
 
+.modal-items {
+    padding: 10px;
+}
+
+li {
+    margin-bottom: 15px;
+}
 .play-again {
     top: 5%;
 }
@@ -101,9 +109,6 @@ main{
     bottom: 10%;
 }
 
-.hidden {
-    display: none;
-}
 
 .winner {
     background-color: #f2d0ed;
@@ -111,19 +116,34 @@ main{
 }
 
 .modal-window {
-    display: none;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 70%;
+    width: 100vw;
     z-index: 10;
     padding: 20px;
     border-radius: 10px;
     backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.2);
+    height: 100vh;
+    background: rgba(83, 78, 78, 0.348);
+}
+
+.modal-inside {
+    width: 40vw;
+    background-color: white;
+    padding: 30px;
+    border-radius: 9px;
 }
 
 ul{
     list-style-position: inside;
+}
+
+.hidden {
+    display: none;
 }

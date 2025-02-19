@@ -9,6 +9,13 @@ const dice_image = document.getElementById('dice-image');
 const roll_dice = document.querySelector('.roll-dice');
 const play_again = document.querySelector('.play-again');
 const hold_score = document.querySelector('.hold-score');
+const play_first = document.querySelector('.play');
+
+function initialise() {
+    document.querySelector('.modal-window').classList.toggle('hidden');
+}
+
+play_first.addEventListener('click', initialise);
 
 let playing;
 let scores;
